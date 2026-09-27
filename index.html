@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LK Solutions & Landscaping | Pensacola & Surrounding Areas</title>
+<meta name="description" content="LK Solutions & Landscaping provides lawn care, mulching, hedging, pine straw, yard cleanup, and holiday lighting in Pensacola, Cantonment, Milton, Molino and surrounding areas.">
+<style>
+:root{--forest:#0b4d2a;--deep:#06351d;--leaf:#4f8a3a;--cream:#f8f6ee;--paper:#fffdf8;--ink:#183226;--muted:#63756b;--line:#dce5dd}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+a{text-decoration:none}
+.topbar{background:var(--deep);color:#fff;padding:8px 20px;text-align:center;font-size:.9rem}
+.topbar a{color:#fff;font-weight:800}
+header{position:sticky;top:0;z-index:20;background:rgba(255,253,248,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{max-width:1180px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:11px;color:var(--forest);font-weight:900}
+.logo-mark{width:48px;height:48px;border:2px solid var(--forest);border-radius:12px;display:grid;place-items:center;font-family:Georgia,serif;font-size:1.35rem}
+.logo-text{line-height:1.05}
+.logo-text small{display:block;letter-spacing:.2em;font-size:.62rem;margin-top:4px}
+nav{display:flex;align-items:center;gap:24px}
+nav a{color:var(--ink);font-weight:800;font-size:.93rem}
+nav a:hover{color:var(--leaf)}
+.nav-cta{background:var(--forest);color:#fff!important;padding:10px 16px;border-radius:999px}
+.hero{min-height:82vh;display:flex;align-items:center;background:linear-gradient(90deg,rgba(3,35,19,.86),rgba(3,35,19,.55),rgba(3,35,19,.25)),url("images/flyer-1.jpeg") center/cover no-repeat}
+.hero-inner{max-width:1180px;width:100%;margin:auto;padding:80px 22px;color:#fff}
+.kicker{display:inline-block;border:1px solid rgba(255,255,255,.5);padding:7px 13px;border-radius:999px;text-transform:uppercase;letter-spacing:.15em;font-size:.75rem;font-weight:800;margin-bottom:18px}
+.hero h1{font-family:Georgia,serif;font-size:clamp(3rem,7vw,6rem);line-height:.98;max-width:760px;margin-bottom:20px}
+.hero h1 span{color:#b8df88}
+.hero p{font-size:1.18rem;max-width:650px;color:#eef5ed;margin-bottom:28px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 21px;border-radius:999px;font-weight:900}
+.btn-light{background:#fff;color:var(--forest)}
+.btn-outline{border:2px solid #fff;color:#fff}
+.btn-green{background:var(--forest);color:#fff}
+.section{padding:82px 22px}
+.container{max-width:1180px;margin:auto}
+.heading{text-align:center;max-width:760px;margin:0 auto 42px}
+.heading .eyebrow{color:var(--leaf);font-weight:900;letter-spacing:.15em;text-transform:uppercase;font-size:.75rem}
+.heading h2{font-family:Georgia,serif;color:var(--forest);font-size:clamp(2rem,4vw,3rem);margin:8px 0}
+.heading p{color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:-55px;position:relative;z-index:3;padding:0 22px}
+.stat{background:#fff;padding:25px;border-radius:18px;box-shadow:0 14px 35px rgba(5,45,24,.11);border:1px solid var(--line);text-align:center}
+.stat strong{display:block;color:var(--forest);font-size:1.15rem}
+.stat span{font-size:.9rem;color:var(--muted)}
+.about{background:var(--cream)}
+.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center}
+.about-img{position:relative}
+.about-img img{width:100%;border-radius:24px;box-shadow:0 18px 45px rgba(5,45,24,.14)}
+.about-copy h2{font-family:Georgia,serif;color:var(--forest);font-size:2.6rem;line-height:1.1;margin:8px 0 18px}
+.about-copy p{margin-bottom:14px;color:#46594f}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}
+.check{font-weight:800;color:var(--forest)}
+.check:before{content:"✓";margin-right:8px;color:var(--leaf)}
+.services{background:#fff}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{padding:28px;background:var(--cream);border:1px solid var(--line);border-radius:20px;transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(5,45,24,.09)}
+.card .emoji{font-size:2rem}
+.card h3{color:var(--forest);margin:12px 0 6px}
+.card p{color:var(--muted);font-size:.95rem}
+.season{background:var(--deep);color:#fff}
+.season .heading h2{color:#fff}.season .heading p{color:#c9d9cf}.season .heading .eyebrow{color:#b8df88}
+.season-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.season-card{position:relative;overflow:hidden;border-radius:22px;min-height:410px;background:#111}
+.season-card img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;opacity:.7}
+.season-card div{position:absolute;inset:auto 0 0;padding:30px;background:linear-gradient(transparent,rgba(0,0,0,.85))}
+.season-card h3{font-family:Georgia,serif;font-size:1.8rem}
+.gallery{background:var(--cream)}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.gallery-grid img{width:100%;height:390px;object-fit:cover;border-radius:18px;border:1px solid var(--line)}
+.quote{background:linear-gradient(135deg,#f1f6ed,#fffdf8)}
+.quote-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px;align-items:start}
+.quote-copy h2{font-family:Georgia,serif;color:var(--forest);font-size:2.7rem;line-height:1.1;margin:8px 0 16px}
+.quote-copy p{color:var(--muted);margin-bottom:18px}
+.contact-line{margin:10px 0;font-weight:800}
+.contact-line a{color:var(--forest)}
+.form{background:#fff;padding:30px;border-radius:22px;box-shadow:0 14px 35px rgba(5,45,24,.09);border:1px solid var(--line)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+label{font-weight:800;font-size:.88rem;color:var(--forest)}
+input,select,textarea{width:100%;margin-top:6px;padding:12px 13px;border:1px solid #cbd8ce;border-radius:10px;font:inherit;background:#fff}
+textarea{min-height:120px;resize:vertical}
+.full{grid-column:1/-1}
+.form button{border:0;cursor:pointer;font:inherit;margin-top:16px}
+.notice{font-size:.78rem;color:var(--muted);margin-top:10px}
+footer{background:#032614;color:#d9e8df;padding:35px 22px;text-align:center}
+footer strong{font-family:Georgia,serif;font-size:1.2rem}
+footer p{font-size:.85rem;margin-top:5px;color:#9db6a8}
+@media(max-width:850px){
+ nav{display:none}.stats{grid-template-columns:1fr}
+ .about-grid,.quote-grid,.season-grid{grid-template-columns:1fr}
+ .cards{grid-template-columns:1fr 1fr}.gallery-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+ .hero{min-height:78vh}.hero-inner{padding:65px 20px}
+ .hero h1{font-size:3.2rem}.cards{grid-template-columns:1fr}
+ .checks,.form-grid{grid-template-columns:1fr}.full{grid-column:auto}
+ .season-card{min-height:330px}
+}
+</style>
+</head>
+<body>
+<div class="topbar">Serving Pensacola • Cantonment • Milton • Molino & surrounding areas &nbsp; | &nbsp; <a href="tel:7472746393">747-274-6393</a></div>
+
+<header>
+<div class="nav">
+<a class="logo" href="#home"><span class="logo-mark">LK</span><span class="logo-text">LK SOLUTIONS<small>& LANDSCAPING</small></span></a>
+<nav>
+<a href="#about">About</a><a href="#services">Services</a><a href="#seasonal">Seasonal</a><a href="#work">Our Work</a><a class="nav-cta" href="#quote">Get a Quote</a>
+</nav>
+</div>
+</header>
+
+<section class="hero" id="home">
+<div class="hero-inner">
+<div class="kicker">Local Landscaping & Property Care</div>
+<h1>Quality work.<br><span>Greener spaces.</span><br>Lasting results.</h1>
+<p>Dependable landscaping, lawn care, yard cleanup, and seasonal services to keep your property looking its best all year long.</p>
+<div class="actions">
+<a class="btn btn-light" href="#quote">Request a Free Quote</a>
+<a class="btn btn-outline" href="tel:7472746393">Call 747-274-6393</a>
+</div>
+</div>
+</section>
+
+<div class="container stats">
+<div class="stat"><strong>Reliable Service</strong><span>Dependable help for your property</span></div>
+<div class="stat"><strong>Quality Work</strong><span>Careful attention to the details</span></div>
+<div class="stat"><strong>Local Service</strong><span>Pensacola & surrounding communities</span></div>
+</div>
+
+<section class="section about" id="about">
+<div class="container about-grid">
+<div class="about-img"><img src="images/flyer-1.jpeg" alt="LK Solutions & Landscaping business information"></div>
+<div class="about-copy">
+<div class="heading" style="text-align:left;margin:0"><div class="eyebrow">About LK Solutions</div><h2>Your local landscaping solution.</h2></div>
+<p>LK Solutions & Landscaping helps homeowners keep their properties clean, healthy, and looking their best year-round.</p>
+<p>From routine lawn care and yard cleanups to mulching, trimming, pine straw installation, and holiday lighting, we handle the hard work so you can enjoy your property.</p>
+<div class="checks"><div class="check">Reliable service</div><div class="check">Quality work</div><div class="check">Attention to detail</div><div class="check">Customer focused</div></div>
+</div>
+</div>
+</section>
+
+<section class="section services" id="services">
+<div class="container">
+<div class="heading"><div class="eyebrow">What We Do</div><h2>Services for your property</h2><p>Choose the services you need to keep your yard clean, healthy, and looking great.</p></div>
+<div class="cards">
+<div class="card"><div class="emoji">🌱</div><h3>Mulching</h3><p>Fresh mulch for a clean finished look, moisture retention, and weed control.</p></div>
+<div class="card"><div class="emoji">✂️</div><h3>Hedging & Shrub Trimming</h3><p>Professional trimming and shaping to keep shrubs and hedges neat and healthy.</p></div>
+<div class="card"><div class="emoji">🌾</div><h3>Pine Straw Installation</h3><p>Add a polished landscape finish while helping with moisture and weed control.</p></div>
+<div class="card"><div class="emoji">🧹</div><h3>Yard Cleanup</h3><p>Remove leaves, debris, and overgrowth so your property stays clean and ready.</p></div>
+<div class="card"><div class="emoji">🌿</div><h3>Lawn Care</h3><p>Mowing, edging, and general lawn care to keep your yard in top shape.</p></div>
+<div class="card"><div class="emoji">💡</div><h3>Holiday Lighting</h3><p>Professional installation, décor, take-down, and storage for a stress-free holiday season.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section season" id="seasonal">
+<div class="container">
+<div class="heading"><div class="eyebrow">Seasonal Services</div><h2>Ready for every season.</h2><p>From fall yard preparation to holiday lighting, LK Solutions & Landscaping can help.</p></div>
+<div class="season-grid">
+<div class="season-card"><img src="images/flyer-2.jpeg" alt="Fall landscaping services"><div><h3>Fall Services</h3><p>Mulching, hedging, pine straw, yard cleanup, and lawn care.</p></div></div>
+<div class="season-card"><img src="images/flyer-3.jpeg" alt="Christmas lights and décor services"><div><h3>Christmas Lights & Décor</h3><p>Light installation, décor, custom designs, take-down, and storage.</p></div></div>
+</div>
+</div>
+</section>
+
+<section class="section gallery" id="work">
+<div class="container">
+<div class="heading"><div class="eyebrow">Our Work</div><h2>See what we offer</h2><p>A look at LK Solutions & Landscaping's seasonal service materials.</p></div>
+<div class="gallery-grid"><img src="images/flyer-1.jpeg" alt="LK Solutions flyer"><img src="images/flyer-2.jpeg" alt="Fall services flyer"><img src="images/flyer-3.jpeg" alt="Christmas services flyer"></div>
+</div>
+</section>
+
+<section class="section quote" id="quote">
+<div class="container quote-grid">
+<div class="quote-copy">
+<div class="eyebrow" style="color:var(--leaf);font-weight:900;letter-spacing:.15em;text-transform:uppercase;font-size:.75rem">Get Started</div>
+<h2>Let's make your property look its best.</h2>
+<p>Tell us what you need and we'll have the details ready when you contact us.</p>
+<div class="contact-line">📞 <a href="tel:7472746393">747-274-6393</a></div>
+<div class="contact-line">✉️ <a href="mailto:Kahlanilippwe@icloud.com">Kahlanilippwe@icloud.com</a></div>
+<p style="margin-top:18px"><strong>Service area:</strong><br>Pensacola, Cantonment, Milton, Molino & surrounding areas</p>
+</div>
+<form class="form" action="mailto:Kahlanilippwe@icloud.com" method="post" enctype="text/plain">
+<div class="form-grid">
+<div><label>Name<input name="Name" required></label></div>
+<div><label>Phone<input name="Phone" type="tel" required></label></div>
+<div><label>Email<input name="Email" type="email"></label></div>
+<div><label>Service<select name="Service"><option>Mulching</option><option>Hedging / Shrub Trimming</option><option>Pine Straw Installation</option><option>Yard Cleanup</option><option>Lawn Care</option><option>Holiday Lights / Décor</option><option>Other</option></select></label></div>
+<div class="full"><label>Tell us what you need<textarea name="Details" placeholder="Tell us a little about your property and the service you need."></textarea></label></div>
+</div>
+<button class="btn btn-green" type="submit">Send Quote Request</button>
+<div class="notice">Submitting opens your email app with the request details filled in.</div>
+</form>
+</div>
+</section>
+
+<footer>
+<strong>LK Solutions & Landscaping</strong>
+<p>Quality Work. Greener Spaces. Lasting Results.</p>
+<p>© 2026 LK Solutions & Landscaping • Pensacola, FL & surrounding areas</p>
+</footer>
+</body>
+</html>
